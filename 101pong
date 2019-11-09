@@ -16,7 +16,7 @@ print("At time t + " + sys.argv[7] + ", ball coordinates will be:")
 li2 = ((float(sys.argv[4]) + (li[0] * float(sys.argv[7])), float(sys.argv[5]) + (li[1] * float(sys.argv[7])), float(sys.argv[6]) + (li[2] * float(sys.argv[7]))))
 print("(%.2f,  %.2f, %.2f)" % (li2[0], li2[1], li2[2]))
 if (float(sys.argv[6]) < 0) and (li2[2] < 0) or (float(sys.argv[6]) > 0) and (li2[2] > 0) :
-    print("The ball won’t reach the paddle.")
+    print("The ball won't reach the paddle.")
 else :
     norm = (math.sqrt((li[0] ** 2) + (li[1] ** 2) + (li[2] ** 2)))
     res = ((math.asin(float(math.sqrt(li[2] ** 2)) / norm)) * (180/math.pi))
