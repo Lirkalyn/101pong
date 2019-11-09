@@ -19,7 +19,6 @@ if (float(sys.argv[6]) < 0) and (li2[2] < 0) or (float(sys.argv[6]) > 0) and (li
     print("The ball won’t reach the paddle.")
 else :
     norm = (math.sqrt((li[0] ** 2) + (li[1] ** 2) + (li[2] ** 2)))
-    print("norm = %d z = %d", norm, sys.argv[6])
     res = ((math.asin(float(math.sqrt(li[2] ** 2)) / norm)) * (180/math.pi))
     print("The incidence angle is:")
     print("%.2f degrees" % res)
