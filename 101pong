@@ -12,7 +12,7 @@ import math
 i = 1
 while (i < len(sys.argv)):
     try:
-        int(sys.argv[i])
+        float(sys.argv[i])
     except:
         sys.exit(84)
     i += 1
